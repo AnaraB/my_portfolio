@@ -84,13 +84,25 @@ header h1 {
 
 /* Work section */
 
-.container {
-  /* justify-content: space-evenly;
+#work {
+ display: flex;
+ justify-content: center;
+}
 
-  flex-flow: column wrap;
+#work h2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: wrap;
   row-gap: 20px;
-  column-gap: 20px; */
-  width: 600px;
+  column-gap: 20px;
+  width: 850px;
   position: relative;
   align-items: center;
  
@@ -105,11 +117,16 @@ header h1 {
   border: 1px solid #000;
   transition: 0.5s ease;
   overflow: hidden;
+  width: 50%;
+}
+
+.projectCard-big {
+  width: 80%;
 }
 
 .projectCard img {
-  max-height: 150px;
-  min-width: 200px;
+  max-height: 100px;
+  min-width: 100px;
   object-fit: cover;
   margin-top: 10px;;
 }
