@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4
+ {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* header and navigation bar  */
+
+header {
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+header h1 {
+ display: inline-block;
+ font-size: 40px;
+ color: #0766AD;
+}
+
+#navbarNav {
+  padding: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 20px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  
+}
+
+.nav-item a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #164863;
+  
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: end;
+}
+
+/* hero-banner section */
+
+.hero-banner {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/hero-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.hero-banner h2{
+  color: aliceblue;
+
+}
+
+
+
+
+
+
+/* Work section */
+
+.container {
+  /* justify-content: space-evenly;
+
+  flex-flow: column wrap;
+  row-gap: 20px;
+  column-gap: 20px; */
+  width: 600px;
+  position: relative;
+  align-items: center;
+ 
+}
+
+.projectCard {
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #000;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+
+.projectCard img {
+  max-height: 150px;
+  min-width: 200px;
+  object-fit: cover;
+  margin-top: 10px;;
+}
+
+.projectCard a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.projectCard a:hover {
+  text-decoration: none;
+  cursor:pointer; 
+  color:#691ee9;
+}
+
+.projectCard h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-left: 10px;
+
+}
+
+.projectCard p {
+  text-align: center;
+  
+}
+
+.projectCard:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  margin-left: 20px;
+}
+
+
+/* Contact Me Section */
