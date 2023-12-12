@@ -97,37 +97,24 @@ p {
 /* About me section  */
 
 #about {
-  margin: 3% 5%;
+  margin: 5% 5%;
   display: flex;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   
  
 }
-/*  
-.about-section-title {
-  width: 50%;
-  border-right: 6px solid green;;
-  height: 80px;
 
-} */
 
 .text {
-  padding-left: 90px;
+  padding-left: 85px;
+  line-height: 1.8;
+  margin-left: 50px;
+  font-size: 20px;
 } 
-
-
-
-
 
 /* Work section */
 
-/* .work-section-title {
-
-  width: 55%;
-  border-right: 6px solid green;;
-  height: 400px;
-} */
 
 #work {
   display: grid;
@@ -176,9 +163,8 @@ p {
   cursor: pointer;
   display: grid;
   align-content: end;
-  /* transition: 0.5s ease; */
   overflow: hidden;
-  border: solid ;
+  border: solid  3px  ;
   padding-left: 20px;
 }
 
@@ -190,13 +176,13 @@ p {
 
 .projectGridArea:hover {
   transform: scale(1.1);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 15px rgba(181, 173, 173, 0.8);
 } 
 
 .heading {
-  background: rgba(3, 2, 2, 0.7);
-  padding: 10px 30px;
-
+  background: rgba(27, 118, 245, 0.7);
+  padding: 10px 40px;
+  margin-left: 300px;
 }
 
 .heading a {
@@ -219,20 +205,62 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 200px;
-  background-color: rgb(250, 246, 246); 
-   
+  justify-content: space-between;
+  height: 20vh;
 
 }
 
-.contact-details {
+
+
+
+.contact-items li {
+  text-decoration: none;
   display: flex;
-  
+ align-items: center;
   justify-content: space-around;
-  align-items: center;
 }
 
-/* .contactMe-section-title {
- border-bottom: 6px solid green;
+/* media query section */
 
-} */
+@media only screen and (max-width: 1000px) {
+  .center{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #nav h1 {
+    font-size: 28px;
+   text-align: center;
+   width: 100%;
+  
+  }
+
+   #work {
+    grid-template-rows: 50px 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "section-title"
+    "meditationClub"
+    "horiseon" 
+    "cakeShop"
+    "preworkStudyGuide"
+    "buildingSolutions";
+
+   } 
+  
+
+   .heading {
+    padding: 10px;
+    margin-left: 200px;
+  }
+
+  .text {
+    padding-left: 85px;
+    line-height: 1.2;
+    margin-left: 50px;
+    font-size: 16px;
+  } 
+}

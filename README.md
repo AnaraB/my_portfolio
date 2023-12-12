@@ -1,2 +1,2 @@
-# pomegranati_portfolio
+# My_portfolio
 My portfolio website
