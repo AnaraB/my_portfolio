@@ -104,13 +104,17 @@ p {
   
  
 }
-
+/*  
 .about-section-title {
-  /* position: relative; */
   width: 50%;
   border-right: 6px solid green;;
   height: 80px;
-}
+
+} */
+
+.text {
+  padding-left: 90px;
+} 
 
 
 
@@ -118,18 +122,18 @@ p {
 
 /* Work section */
 
-.work-section-title {
-  /* position: relative; */
+/* .work-section-title {
+
   width: 55%;
   border-right: 6px solid green;;
   height: 400px;
-}
+} */
 
 #work {
   display: grid;
   margin: 0px 5%;
-  grid-template-rows: 100% 50% 50%;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 600px 300px 300px;
+  grid-template-columns: 200px 1fr 1fr;
   grid-template-areas: 
   "section-title meditationClub meditationClub"
   "section-title horiseon cakeShop"
@@ -175,6 +179,7 @@ p {
   /* transition: 0.5s ease; */
   overflow: hidden;
   border: solid ;
+  padding-left: 20px;
 }
 
 .projectGridArea a:hover {
@@ -210,23 +215,24 @@ p {
 /* Contact Me Section */
 
 #contact {
+  margin: 0px 5%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   height: 200px;
-  background-color: aqua; 
+  background-color: rgb(250, 246, 246); 
    
 
 }
 
 .contact-details {
   display: flex;
-  align-items: center;
+  
   justify-content: space-around;
+  align-items: center;
 }
 
-.contactMe-section-title {
+/* .contactMe-section-title {
  border-bottom: 6px solid green;
- width: auto;
-}
+
+} */
