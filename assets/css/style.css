@@ -74,13 +74,15 @@ p {
 
 .hero-grid {
   margin: 0 5%;
-  display: grid;
+  display: flex;
   min-height: 500px;
   height: 70vh;
-  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
   background-image: url("../images/hero-banner.jpeg");
   background-size: cover;
   background-position: center;
+  position: relative;
   
 }
 
@@ -213,14 +215,15 @@ p {
   justify-content: center;
   align-items: center;
   height: 200px;
-  background-color: aqua;
+  background-color: aqua; 
+   
 
 }
 
 .contact-details {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .contactMe-section-title {
