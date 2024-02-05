@@ -1,20 +1,137 @@
+* {
+  box-sizing: border-box;
+
+}
+
+
+
+h1,
+h2,
+h3,
+h4
+ {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* header and navigation bar  */
+
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 5%;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+#nav h1 {
+  width: 60%;
+  font-weight: 500;
+  font-size: 40px;
+  color: rgba(0, 128, 0, 0.951);
+  padding-left: 25px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.center {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content:space-evenly;
+  /* justify-items: flex-end; */
+   padding-left: 20px;
+
+}
+.center a {
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color:green;
+  padding-top: 10px;
+
+  
+}
+
+
+
+
+/* hero-banner section */
+
+.hero-grid {
+  margin: 0 5%;
+  display: flex;
+  min-height: 500px;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/hero-banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+.headline {
+  position: absolute;
+  bottom: 100px;
+  padding: 15px;
+  max-width: 550px;
+  color: white;
+}
+
+/* About me section  */
+
+#about {
+  margin: 5% 5%;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+ 
+}
+
+
+.text {
+  padding-left: 85px;
+  line-height: 1.8;
+  margin-left: 50px;
+  font-size: 20px;
+} 
+
 /* Work section */
+
+
 #work {
   display: grid;
   margin: 0px 5%;
   grid-template-rows: 33% 33% 33%;
   grid-template-columns: 200px 1fr 1fr;
-  grid-template-areas: "section-title weatherDashboard portfolio" "section-title gazetteer companyDirectory" "section-title quizProject workDayPlanner";
+  grid-template-areas: 
+  "section-title weatherDashboard portfolio"
+  "section-title gazetteer companyDirectory"
+  "section-title quizProject workDayPlanner";
 }
 
 #weatherDashboard {
   grid-area: weatherDashboard;
   background-image: url("../images/projects/weather-dashboard.png");
+
 }
 
-#portfolio {
+#portfolio{
   grid-area: portfolio;
   background-image: url("../images/projects/portfolio-bootstrap.png");
+
 }
 
 #gazetteer {
@@ -37,6 +154,8 @@
   background-image: url("../images/projects/work-day-planner.png");
 }
 
+
+
 .projectGridArea {
   background-position: center;
   background-size: cover;
@@ -46,20 +165,20 @@
   display: grid;
   align-content: end;
   overflow: hidden;
-  border: solid 3px;
+  border: solid  3px  ;
   padding-left: 20px;
 }
 
 .projectGridArea a:hover {
   text-decoration: none;
-  cursor: pointer;
+  cursor:pointer; 
   color: rgb(36, 225, 62);
 }
 
 .projectGridArea:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(181, 173, 173, 0.8);
-}
+} 
 
 .heading {
   background: rgba(27, 118, 245, 0.7);
@@ -69,7 +188,7 @@
 
 .heading a {
   text-decoration: none;
-  color: rgb(167, 246, 167);
+  color:rgb(167, 246, 167);
   font-size: 25px;
   cursor: pointer;
 }
@@ -80,127 +199,69 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* hero-banner section */
-.hero-grid {
-  margin: 0 5%;
-  display: flex;
-  min-height: 500px;
-  height: 70vh;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../images/hero-banner.jpeg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.headline {
-  position: absolute;
-  bottom: 100px;
-  padding: 15px;
-  max-width: 550px;
-  color: white;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  line-height: 1.5;
-}
-
-/* header and navigation bar  */
-#nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 5%;
-  margin-bottom: 20px;
-  background-color: white;
-}
-#nav h1 {
-  width: 60%;
-  font-weight: 500;
-  font-size: 40px;
-  color: rgba(0, 128, 0, 0.951);
-  padding-left: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-#nav .center {
-  display: flex;
-  align-items: center;
-  width: 40%;
-  justify-content: space-evenly;
-  /* justify-items: flex-end; */
-  padding-left: 20px;
-}
-#nav .center a {
-  cursor: pointer;
-}
-#nav .center .nav-link {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: green;
-  padding-top: 10px;
-}
-
-/* About me section  */
-#about {
-  margin: 5% 5%;
-  display: flex;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-#about .text {
-  padding-left: 85px;
-  line-height: 1.8;
-  margin-left: 50px;
-  font-size: 20px;
-}
-
 /* Contact Me Section */
+
 #contact {
-  display: flex;
-  align-items: center;
   margin: 0px 5%;
+  display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   height: 20vh;
+
 }
 
+
+
+
 .contact-items li {
-  display: flex;
-  align-items: center;
   text-decoration: none;
+  display: flex;
+ align-items: center;
   justify-content: space-around;
 }
 
 /* media query section */
+
 @media only screen and (max-width: 1000px) {
-  .center {
+  .center{
     display: none;
   }
+
 }
+
 @media only screen and (max-width: 600px) {
+
   #nav h1 {
     font-size: 28px;
-    text-align: center;
-    width: 100%;
+   text-align: center;
+   width: 100%;
+  
   }
-  #work {
+
+   #work {
     grid-template-rows: 50px 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
-    grid-template-areas: "section-title" "meditationClub" "horiseon" "cakeShop" "preworkStudyGuide" "buildingSolutions";
-  }
-  .heading {
+    grid-template-areas: 
+    "section-title"
+    "meditationClub"
+    "horiseon" 
+    "cakeShop"
+    "preworkStudyGuide"
+    "buildingSolutions";
+
+   } 
+  
+
+   .heading {
     padding: 10px;
     margin-left: 200px;
   }
+
   .text {
     padding-left: 85px;
     line-height: 1.2;
     margin-left: 50px;
     font-size: 16px;
-  }
-}/*# sourceMappingURL=style.css.map */
+  } 
+}

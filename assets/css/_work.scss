@@ -1,0 +1,90 @@
+/* Work section */
+
+
+#work {
+  display: grid;
+  margin: 0px 5%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-areas: 
+  "section-title weatherDashboard portfolio"
+  "section-title gazetteer companyDirectory"
+  "section-title quizProject workDayPlanner";
+}
+
+#weatherDashboard {
+  grid-area: weatherDashboard;
+  background-image: url("../images/projects/weather-dashboard.png");
+
+}
+
+#portfolio{
+  grid-area: portfolio;
+  background-image: url("../images/projects/portfolio-bootstrap.png");
+
+}
+
+#gazetteer {
+  grid-area: gazetteer;
+  background-image: url("../images/projects/gazetteer.png");
+}
+
+#companyDirectory {
+  grid-area: companyDirectory;
+  background-image: url("../images/projects/Company_director.png");
+}
+
+#quizProject {
+  grid-area: quizProject;
+  background-image: url("../images/projects/08-web-apis-challenge-demo.gif");
+}
+
+#workDayPlanner {
+  grid-area: workDayPlanner;
+  background-image: url("../images/projects/work-day-planner.png");
+}
+
+
+
+.projectGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  overflow: hidden;
+  border: solid  3px  ;
+  padding-left: 20px;
+}
+
+.projectGridArea a:hover {
+  text-decoration: none;
+  cursor:pointer; 
+  color: rgb(36, 225, 62);
+}
+
+.projectGridArea:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(181, 173, 173, 0.8);
+} 
+
+.heading {
+  background: rgba(27, 118, 245, 0.7);
+  padding: 10px 40px;
+  margin-left: 300px;
+}
+
+.heading a {
+  text-decoration: none;
+  color:rgb(167, 246, 167);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.heading p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
