@@ -122,35 +122,41 @@ p {
   grid-template-rows: 600px 300px 300px;
   grid-template-columns: 200px 1fr 1fr;
   grid-template-areas: 
-  "section-title meditationClub meditationClub"
-  "section-title horiseon cakeShop"
-  "section-title preworkStudyGuide buildingSolutions";
+  "section-title weatherDashboard portfolio"
+  "section-title gazetteer companyDirectory"
+  "section-title quizProject workDayPlanner";
 }
 
-#meditationClub {
-  grid-area: meditationClub;
-  background-image: url("../images/projects/meditation-club.png");
+#weatherDashboard {
+  grid-area: weatherDashboard;
+  background-image: url("../images/projects/weather-dashboard.png");
 
 }
 
-#horiseon {
-  grid-area: horiseon;
-  background-image: url("../images/projects/Horiseon.png");
+#portfolio{
+  grid-area: portfolio;
+  background-image: url("../images/projects/portfolio-bootstrap.png");
+
 }
 
-#cakeShop {
-  grid-area: cakeShop;
-  background-image: url("../images/projects/cake-shop.png");
+#gazetteer {
+  grid-area: gazetteer;
+  background-image: url("../images/projects/gazetteer.png");
 }
 
-#preworkStudyGuide {
-  grid-area: preworkStudyGuide;
-  background-image: url("../images/projects/prework-study-guide.png");
+#companyDirectory {
+  grid-area: companyDirectory;
+  background-image: url("../images/projects/Company_director.png");
 }
 
-#buildingSolutions {
-  grid-area: buildingSolutions;
-  background-image: url("../images/projects/building-solutions.png");
+#quizProject {
+  grid-area: quizProject;
+  background-image: url("../images/projects/08-web-apis-challenge-demo.gif");
+}
+
+#workDayPlanner {
+  grid-area: workDayPlanner;
+  background-image: url("../images/projects/work-day-planner.png");
 }
 
 
