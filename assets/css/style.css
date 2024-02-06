@@ -1,8 +1,10 @@
 /* Work section */
 #work {
   display: grid;
-  margin: 0px 5%;
-  grid-template-rows: 33% 33% 33%;
+  margin: 40px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 40px;
   grid-template-columns: 200px 1fr 1fr;
   grid-template-areas: "section-title weatherDashboard portfolio" "section-title gazetteer companyDirectory" "section-title quizProject workDayPlanner";
 }
@@ -10,44 +12,62 @@
 #weatherDashboard {
   grid-area: weatherDashboard;
   background-image: url("../images/projects/weather-dashboard.png");
+  background-size: 310px;
+  width: 400px;
+  height: 400px;
 }
 
 #portfolio {
+  display: grid;
   grid-area: portfolio;
   background-image: url("../images/projects/portfolio-bootstrap.png");
+  background-size: 310px;
+  width: 400px;
+  height: 400px;
 }
 
 #gazetteer {
   grid-area: gazetteer;
   background-image: url("../images/projects/gazetteer.png");
+  background-size: 180px;
+  width: 400px;
+  height: 400px;
 }
 
 #companyDirectory {
   grid-area: companyDirectory;
   background-image: url("../images/projects/Company_director.png");
+  background-size: 180px;
+  width: 400px;
+  height: 400px;
 }
 
 #quizProject {
   grid-area: quizProject;
   background-image: url("../images/projects/08-web-apis-challenge-demo.gif");
+  background-size: 310px;
+  width: 400px;
+  height: 400px;
 }
 
 #workDayPlanner {
   grid-area: workDayPlanner;
   background-image: url("../images/projects/work-day-planner.png");
+  background-size: 310px;
+  width: 400px;
+  height: 400px;
 }
 
 .projectGridArea {
   background-position: center;
-  background-size: cover;
+  background-color: rgba(98, 92, 92, 0.124);
   background-repeat: no-repeat;
   margin: 15px;
   cursor: pointer;
   display: grid;
   align-content: end;
   overflow: hidden;
-  border: solid 3px;
-  padding-left: 20px;
+  border: solid 1px;
 }
 
 .projectGridArea a:hover {
@@ -65,17 +85,15 @@
   background: rgba(27, 118, 245, 0.7);
   padding: 10px 40px;
   margin-left: 300px;
+  display: grid;
 }
-
 .heading a {
   text-decoration: none;
   color: rgb(167, 246, 167);
   font-size: 25px;
   cursor: pointer;
 }
-
 .heading p {
-  color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
